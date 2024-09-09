@@ -4,7 +4,12 @@ module.exports = {
     "./src/**/*.{html,ts}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      maxWidth:{
+        "maxNav":"700px",
+        "maxDes": "500px"
+      }
+    },
   },
   plugins: [],
 }

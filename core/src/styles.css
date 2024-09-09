@@ -2,3 +2,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root{
+    --primary : #0F103F,
+    --secondary : #1C1C65,
+    --tr : #1C1C65,
+    --fort: #C961DE,
+    --fir: #2954A3
+
+}
+
+body{
+    background: #0F103F
+}
