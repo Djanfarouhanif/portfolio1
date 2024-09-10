@@ -9,8 +9,13 @@ module.exports = {
         "maxNav":"700px",
         "maxDes": "700px"
       },
-      background:{
-        "buttonColor": "#C961DE"
+      colors:{
+        "primary": "#0F103F",
+        "secondary":"#1C1C65",
+        "floot": "#1C1C6",
+        "primarybutton": "#C961DE",
+        "secondarybutton": "#2954A3"
+
       }
     },
   },

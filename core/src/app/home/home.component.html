@@ -1,7 +1,10 @@
 <!-- Container div -->
-<div class="h-screen">
+<div class="relative h-screen overflow-y-hidden">
+    <div class="absolute bottom-0 right-0 transform z-0">
+        <img src="../../assets/asset3D/Ilustration bottom.svg" alt="Top left asset" >
+    </div>
     <!-- Header -->
-     <div class="flex justify-center">
+     <div class="flex justify-center z-10">
         <!--Nav-->
         <nav class="flex items-center gap-12 flex-row-reverse m-10  max-w-maxNav ">
             <a href="#" class="text-2xl text-slate-50">Home</a>
@@ -12,7 +15,7 @@
         </nav>
      </div>
      <!-- Content -->
-      <div class="flex gap-10"> 
+      <div class="flex gap-10 z-10 h-1/2"> 
         <!--Side bare-->
         <div class="w-20 block ">
             <a href="#">Home</a>
@@ -20,17 +23,17 @@
             <a href="#">work</a>
         </div>
         <!--Description-->
-        <div class="w-full m-52 flex justify-center items-center">
+        <div class="w-full flex justify-center items-center z-10">
             <div>
-                <div class="flex max-w-maxDes text-4xl font-bold text-slate-100 justify-center">
+                <div class="flex max-w-maxDes text-4xl font-bold text-center text-slate-100 justify-center">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint impedit accusantium tenetu
                     reiciendis autem repellendus eum numquam, repudiandae deleniti est nesciunt ullam corporis!
                     
                 </div>
             <!--Button-->
-                <div class="flex gap-5 mt-5 justify-center">
-                    <a href="#" class="text-slate-100 text-2xl font-bold  py-3 px-7 rounded-3xl bg-pink-500 ">Hire me</a>
-                    <a href="#" class="text-slate-100 text-2xl font-bold py-3 px-7 bg-gradient-to-tr bg-blue-900 rounded-3xl">Download CV</a>
+                <div class="flex gap-5 mt-12 justify-center">
+                    <a href="#" class="text-slate-100 text-2xl font-bold  py-3 px-7 rounded-3xl bg-gradient-to-r from-secondarybutton ">Hire me</a>
+                    <a href="#" class="text-slate-100 text-2xl font-bold py-3 px-7  bg-gradient-to-r from-primarybutton  to-secondary  rounded-3xl">Download CV</a>
                 </div>
          </div>
         </div>
