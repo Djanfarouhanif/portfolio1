@@ -8,6 +8,9 @@ module.exports = {
       maxWidth:{
         "maxNav":"700px",
         "maxDes": "700px"
+      },
+      background:{
+        "buttonColor": "#C961DE"
       }
     },
   },
