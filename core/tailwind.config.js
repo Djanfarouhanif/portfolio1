@@ -7,7 +7,7 @@ module.exports = {
     extend: {
       maxWidth:{
         "maxNav":"700px",
-        "maxDes": "500px"
+        "maxDes": "700px"
       }
     },
   },
