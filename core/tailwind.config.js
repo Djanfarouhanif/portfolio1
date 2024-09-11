@@ -16,6 +16,9 @@ module.exports = {
         "primarybutton": "#C961DE",
         "secondarybutton": "#2954A3"
 
+      },
+      screens: {
+        "assete": {"max": "800px"}
       }
     },
   },
