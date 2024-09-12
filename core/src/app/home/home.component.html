@@ -6,13 +6,11 @@
   <!-- Header -->
   <div class="flex justify-center z-10">
     <!--Nav-->
-    <nav
-      class="flex items-center justify-center gap-12 m-10 max-w-maxNav z-10 assete:gap-4 resPhone:w-80"
-    >
+    <nav class="flex items-center justify-center gap-12 m-10 max-w-maxNav z-10 assete:gap-4 resPhone:w-80">
       <a href="#" class="text-2xl text-slate-50 assete:text-xs">Home</a>
       <a href="#" class="text-2xl text-slate-50 assete:text-xs">About me</a>
       <img
-        class="w-14 resPhone:w-8 rounded-full"
+        class="w-14 assete:w-8 rounded-full"
         src="../../assets/logo/avtare.png"
         alt=""
       />
@@ -21,17 +19,18 @@
     </nav>
   </div>
   <!-- Content -->
-  <div class="flex gap-10 z-10 h-1/2">
+  <div class="flex gap-10 z-10 h-1/2 ml-3">
     
     <!--Menu Bar -->
-    <div class="hidden z-20 menuscreens:block" >
-        <button (click)="toggleNavbar()" >Menu</button>
+    <div class="flex flex-col-reverse w-8 translate-y-16 z-20 relative items-center" >
+        <button *ngIf="navbarOpen === true" class="text-slate-50 text-center transition-all" (click)="toggleNavbar()" >M</button>
+        <button *ngIf="navbarOpen === false" class="text-slate-50 transition-all" (click)="toggleNavbar()" >X </button>
     </div>
     <!--Side bare-->
-    <div class="overflow-hidden fixed left-0 w-16 h-1/2 assete:w-12 flex flex-col justify-between border-none rounded-e-3xl items-center justify-center bg-[#d2d3f2dc]   menuscreens:-left-20" [ngClass] = "{'translate-x-20 z-30': navbarOpen}" >
+   <div class="py-4 overflow-hidden fixed left-0 w-16 h-1/2 assete:w-12 flex flex-col justify-between border-none rounded-e-3xl items-center justify-center bg-[#d2d3f2dc] transition-all" [ngClass] = "{'-translate-x-20 z-30 assete:fixed' : !navbarOpen}" >
+
       <div class="">
-        <a href="#" class=""
-          ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 32 32"> <path fill="currentColor" d="m16 2.594l-.72.687l-13 13l1.44 1.44L5 16.437V28h9V18h4v10h9V16.437l1.28 1.282l1.44-1.44l-13-13l-.72-.686zm0 2.844l9 9V26h-5V16h-8v10H7V14.437l9-9z"/></svg></a>
+        <a href="#" class=""><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 32 32"> <path fill="currentColor" d="m16 2.594l-.72.687l-13 13l1.44 1.44L5 16.437V28h9V18h4v10h9V16.437l1.28 1.282l1.44-1.44l-13-13l-.72-.686zm0 2.844l9 9V26h-5V16h-8v10H7V14.437l9-9z"/></svg></a>
       </div>
       <div>
         <a href="#" class=""
@@ -48,7 +47,7 @@
       </div>
 
       <div
-        class="left-8 relative w-20 h-20 bg-secondarybutton rotate-45 flex items-center justify-center mb-5"
+        class="left-8 relative w-20 h-20 bg-secondarybutton rotate-45 flex items-center justify-center mb-5 rounded-bl-3xl"
       >
         <a href="#" class="absolute left-3 bottom-3 -rotate-45"
           ><svg
@@ -95,7 +94,7 @@
               d="M3.574 1.767a1.316 1.316 0 0 1-1.287 1.326A1.346 1.346 0 0 1 .99 1.767A1.326 1.326 0 0 1 2.287.5a1.316 1.316 0 0 1 1.287 1.267M1.129 5.449c0-.762.485-.643 1.158-.643c.673 0 1.148-.119 1.148.643v7.424c0 .772-.485.614-1.148.614c-.663 0-1.158.158-1.158-.614zm4.306.001c0-.426.158-.585.405-.634c.248-.05 1.099 0 1.396 0c.297 0 .416.485.406.851a2.485 2.485 0 0 1 2.217-.99a2.97 2.97 0 0 1 3.148 3.098v5.068c0 .772-.475.614-1.149.614c-.673 0-1.148.158-1.148-.614V8.884A1.425 1.425 0 0 0 9.206 7.34A1.435 1.435 0 0 0 7.74 8.914v3.959c0 .772-.485.614-1.158.614c-.673 0-1.148.158-1.148-.614V5.449Z"
             /></svg></a>
       </div>
-    </div>
+    </div> 
     <!--Description-->
     <div class="w-full flex justify-center items-center z-10">
       <div>
@@ -107,21 +106,17 @@
         </div>
         <!--Button-->
         <div class="flex gap-5 mt-12 justify-center assete:mt-6">
-          <a
-            href="#"
-            class="text-slate-100 text-2xl font-bold py-3 px-7 rounded-3xl bg-gradient-to-r from-secondarybutton assete:text-xs assete:py-1 assete:px-2"
-            >Hire me</a
+          <a href="#" class="text-slate-100 text-2xl font-bold py-3 px-7 rounded-3xl bg-gradient-to-r from-secondarybutton assete:text-xs assete:py-1 assete:px-2">Hire me</a
           >
           <a
             href="#"
-            class="text-slate-100 text-2xl font-bold py-3 px-7 bg-gradient-to-r from-primarybutton to-secondary rounded-3xl assete:text-xs assete:py-1 assete:px-1"
-            >Download CV</a
+            class="text-slate-100 text-2xl font-bold py-3 px-7 bg-gradient-to-r from-primarybutton to-secondary rounded-3xl assete:text-xs assete:py-1 assete:px-1">Download CV</a
           >
         </div>
       </div>
     </div>
   </div>
-  <div class="absolute bottom-0 right-0 z-0 w-96 assete:w-82 resPhone:w-60">
+  <div class="absolute bottom-0 right-0 z-0 w-topillustratore assete:w-72 menuscreens:w-82 -translate-y-20 menuscreens:-translate-y-30">
     <img src="../../assets/asset3D/Ilustration bottom.svg" alt="" />
   </div>
 </div>

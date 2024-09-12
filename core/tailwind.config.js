@@ -21,6 +21,9 @@ module.exports = {
         "assete": {"max": "600px"},
         "resPhone": {"max": "300px"},
         "menuscreens": {"max": "900px"},
+      },
+      width:{
+        "topillustratore": "800px"
       }
     },
   },
