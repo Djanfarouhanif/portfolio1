@@ -12,7 +12,7 @@ module.exports = {
       colors:{
         "primary": "#0F103F",
         "secondary":"#1C1C65",
-        "floot": "#1C1C6",
+        "flootcolor": "#1C1C65",
         "primarybutton": "#C961DE",
         "secondarybutton": "#2954A3"
 
@@ -20,6 +20,7 @@ module.exports = {
       screens: {
         "assete": {"max": "600px"},
         "resPhone": {"max": "300px"},
+        "menuscreens": {"max": "900px"},
       }
     },
   },
