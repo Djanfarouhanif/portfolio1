@@ -18,7 +18,8 @@ module.exports = {
 
       },
       screens: {
-        "assete": {"max": "800px"}
+        "assete": {"max": "600px"},
+        "resPhone": {"max": "300px"},
       }
     },
   },
