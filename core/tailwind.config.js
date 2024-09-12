@@ -23,8 +23,18 @@ module.exports = {
         "menuscreens": {"max": "900px"},
       },
       width:{
-        "topillustratore": "800px"
-      }
+        "topillustratore": "700px"
+      },
+      fontFamily:{
+        poppins: ['Poppins', 'sans-serif']
+      },
+      fontWeight: {
+        light: '300',
+        normal: '400',
+        medium: '500',
+        semibold: '600',
+        bold: '700',
+      },
     },
   },
   plugins: [],
