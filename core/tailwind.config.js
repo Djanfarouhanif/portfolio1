@@ -23,8 +23,14 @@ module.exports = {
         "menuscreens": {"max": "900px"},
       },
       width:{
-        "topillustratore": "700px"
+        "topillustratore": "700px",
+        "topil": "900px",
+        "topilw": "500px",
       },
+      height:{
+        "topillustratore": "500px"
+      }
+      ,
       fontFamily:{
         poppins: ['Poppins', 'sans-serif']
       },
@@ -35,6 +41,11 @@ module.exports = {
         semibold: '600',
         bold: '700',
       },
+      backgroundImage:{
+        "circular": "url('/assets/asset3D/Background.svg')"
+
+
+      }
     },
   },
   plugins: [],
