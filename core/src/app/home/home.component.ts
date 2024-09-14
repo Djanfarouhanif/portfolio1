@@ -2,10 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { NgModel } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { ScreensService } from '../screens.service';
+import { AboutComponent } from '../about/about.component';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [ CommonModule ],
+  imports: [AboutComponent ,CommonModule ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
   providers: [ ScreensService]
