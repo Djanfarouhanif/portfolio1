@@ -1,8 +1,7 @@
 
 
-
 <!-- Container div -->
-<div class="relative h-screen overflow-y-hidden overflow-x-hidden" id="home">
+
   <div class="absolute top-0 left-0 z-0 w-52 assete:w-32">
     <img src="../../assets/asset3D/Illustration top.svg" alt="Top left asset" />
   </div>
@@ -21,15 +20,21 @@
       <a href="#" class="text-2xl text-slate-50 assete:text-xs">Contact</a>
     </nav>
   </div>
+
   <!-- Content -->
   <div class=" z-10 h-1/2  assete:gap-5">
     
     <!--Menu Bar -->
+
     <div class="sticky w-8  z-40  items-center  translate-x-2 hidden assete:flex mb-2 " >
+
         <button *ngIf="navbarOpen === true" class="text-slate-50 text-center transition-all" (click)="toggleNavbar()" ><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 1025 1024"><path fill="white" d="M896.428 640h-768q-53 0-90.5-37.5T.428 512t37.5-90.5t90.5-37.5h768q53 0 90.5 37.5t37.5 90.5t-37.5 90.5t-90.5 37.5zm0-384h-768q-53 0-90.5-37.5T.428 128t37.5-90.5t90.5-37.5h768q53 0 90.5 37.5t37.5 90.5t-37.5 90.5t-90.5 37.5zm-768 512h768q53 0 90.5 37.5t37.5 90.5t-37.5 90.5t-90.5 37.5h-768q-53 0-90.5-37.5T.428 896t37.5-90.5t90.5-37.5z"/></svg></button>
         <button *ngIf="navbarOpen === false" class="text-slate-50 transition-all" (click)="toggleNavbar()" ><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 16 16"><path fill="white" d="M15.1 3.1L12.9.9L8 5.9L3.1.9L.9 3.1l5 4.9l-5 4.9l2.2 2.2l4.9-5l4.9 5l2.2-2.2l-5-4.9z"/></svg> </button>
+
     </div>
+
     <!--Side bare-->
+
    <div class="py-4 overflow-hidden fixed left-0 w-16 h-1/2 assete:w-12 flex flex-col justify-between border-none rounded-e-3xl items-center justify-center bg-[#d2d3f2dc] transition-all z-20 assete:-translate-x-20  " [ngClass] = "{'-translate-x-20  assete:translate-x-0' : !navbarOpen}" >
 
       <div class="">
@@ -116,9 +121,6 @@
   <div class="absolute bottom-0 right-0 z-0 w-topillustratore assete:w-72 menuscreens:w-72 -translate-y-20 menuscreens:-translate-y-30">
     <img src="../../assets/asset3D/Ilustration bottom.svg" alt="" />
   </div> 
-</div>
 <!--About Section-->
-<div class="h-screen flex justify-center items-center assete:-translate-y-20 overflow-x-hidden" id="about">
-    <app-about></app-about>
-</div>
+
 
